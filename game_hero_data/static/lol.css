@@ -1,12 +1,16 @@
 body {
   font-family:      Verdana, Geneva, Arial, sans-serif;
   font-size:        medium;
-  background-color: tan;
+  background-image: url('timg.jpg');
+  background-size:  100%;
   margin-top:       5%;
   margin-bottom:    5%;
   margin-left:      10%;
   margin-right:     10%;
   padding:          10px 10px 10px 10px;
+  background-size:cover;
+  background-repeat:no-repeat;  
+  background-position:0% 0%;  
 }
 a {
   text-decoration:  none; 
@@ -20,12 +24,15 @@ a img {
 }
 h2 {
   font-size:        150%;
+  color:            white;
+  text-align:       center
 }
 table {
   margin-left:      20px;
   margin-right:     20px;
   caption-side:     bottom;
   border-collapse:  collapse;
+  margin:             0px auto;
 }
 td, th {
   padding:          5px;
@@ -65,7 +72,11 @@ input[type=text] {
 }
 input[type=submit] {
   font-size:        125%;
+  position: relative;
+  left: 850px;
+  top:  -50px;
 }
+
 select {
   font-size:        125%;
 }
