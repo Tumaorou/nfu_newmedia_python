@@ -1,4 +1,4 @@
-run.py
+game_hero_data
 
 
 # 简介 
