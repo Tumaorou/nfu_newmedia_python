@@ -26,4 +26,4 @@ def get_dict_hero(name):
             dict_hero = json.load(fp)
         return(dict_hero)
     except:
-        return('error')
+        return('err')
