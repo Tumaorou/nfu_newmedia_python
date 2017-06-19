@@ -10,6 +10,8 @@ game_hero_data
 ## 输出：
 用户得到输出结果为：英雄的技能等信息
 ## 从输入到输出，本组作品使用了：
+### 数据
+* 134个英雄json档，类型字典包字典
 ### 模块
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
 ### API
