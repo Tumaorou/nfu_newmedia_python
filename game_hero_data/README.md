@@ -12,6 +12,8 @@ game_hero_data
 ## 从输入到输出，本组作品使用了：
 ### 数据
 * [data](https://github.com/Tumaorou/nfu_newmedia_python/tree/master/game_hero_data/data)
+*  134个英雄，每个英雄输出一个json档
+*  资料类型：字典包字典
 ### 模块
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
 ### API
