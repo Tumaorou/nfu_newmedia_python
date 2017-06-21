@@ -7,7 +7,7 @@ game_hero_data
 
 
 ## 输入：
-用户输入英雄名或英雄称号，交互界面使用到[HTML5之datalist标签](http://www.w3school.com.cn/html5/html5_datalist.asp)，所以用户可以用英雄名或英雄称号的片段找所需要的指标。
+用户输入英雄名或英雄称号，交互界面使用到[HTML5之datalist标签](http://www.w3school.com.cn/html5/html5_datalist.asp)，所以用户可以用英雄名或英雄称号的片段找所需要的指标。详细见[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/entry.html)
 ## 输出：
 用户得到输出结果为：英雄的视频资料、技能等2个方面的数据，详细见[templates/results.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html)
 
