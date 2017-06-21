@@ -8,7 +8,7 @@ game_hero_data
 ## 输入：
 用户输入英雄名或英雄称号，交互界面使用到HTML5之datalist标签，所以用户可以用英雄名或英雄称号的片段找所需要的指标。
 ## 输出：
-用户得到输出结果为：英雄的技能、视频资料等2个方面的数据，详细见[results.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html)
+用户得到输出结果为：英雄的技能、视频资料等2个方面的数据，详细见[templates/results.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html)
 
 ### 从输入到输出，除了flask模块，本组作品还使用了：
 ### 模块：
@@ -26,17 +26,17 @@ game_hero_data
 
 2、前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
 
-3、後端伺服器web 响应：game_hero_data.py 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版templates/entry.html及一个含指标代码及名称的字典（见代码 the_list_name = list_name）产出的产生《英雄联盟英雄技能信息》的HTML页面
+3、後端伺服器web 响应：[game_hero_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/game_hero_data.py) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/entry.html)及一个含指标代码及名称的字典（见代码 the_list_name = list_name）产出的产生《英雄联盟英雄技能信息》的HTML页面
 
-4、前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"text"，变数名称(name)为'input_hero_name'，使用了HTML5的datalist 定义在 list="name"" 及 datalist标签，详见HTML模版templates/entry.html
+4、前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"text"，变数名称(name)为'input_hero_name'，使用了HTML5的datalist 定义在 list="name"" 及 datalist标签，详见HTML模版[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/entry.html)
 
 5、前端浏览器web 请求：用户选取指标後按了提交钮「搜索」，则产生新的web 请求，按照form元素中定义的method='POST' action='/search4'，以POST为方法，动作为/search4的web 请求
 
 6、後端服务器收到用户web 请求，匹配到@app.route('/search4', methods=['POST'])的函数 get_dict_ename()
 
-7、input_data.py 中 def get_dict_ename() 函数，game_hero_data.py文件调用函数，把用户提交的数据，以flask 模块request.form['input_hero_name']	取到Web 请求中，HTML表单变数名称input_hero_name的值，存放在hero_name这Python变数下，再使用flask模块render_template 函数以templates/results.html模版为基础（输出），其中模版中output_skill_passive_name的值，用dict_hero['data'][0]['passive']['name']这变数之值，其他4项值如此类推。
+7、[input_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/input_data.py) 中 def get_dict_ename() 函数，[game_hero_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/game_hero_data.py)文件调用函数，把用户提交的数据，以flask 模块request.form['input_hero_name']	取到Web 请求中，HTML表单变数名称input_hero_name的值，存放在hero_name这Python变数下，再使用flask模块render_template 函数以templates/results.html模版为基础（输出），其中模版中output_skill_passive_name的值，用dict_hero['data'][0]['passive']['name']这变数之值，其他4项值如此类推。
 
-8、前端浏览器收到web 响应：模版中templates/results.html 的变数值正确的产生的话，前端浏览器会收到正确响应，看到指标的相关元数据。
+8、前端浏览器收到web 响应：模版中[templates/results.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html) 的变数值正确的产生的话，前端浏览器会收到正确响应，看到指标的相关元数据。
 
 ## 作者成员：
 见[_team_.tsv](_team_/_team_.tsv)
