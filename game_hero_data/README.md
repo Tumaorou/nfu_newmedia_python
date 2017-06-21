@@ -3,7 +3,7 @@ game_hero_data
 英文项目名称game_hero_data，game hero指游戏中的英雄,data意思为”数据，资料”，就是指在《英雄联盟》这款游戏中英雄相关资料的说明。
 
 # 简介 
-网络游戏英雄联盟的英雄资料查询，输入方面用户可输入想查询英雄的名或称号（如“盖伦”和“德玛西亚之力”），输出方面则是该英雄的视频资料，被动技能以及其“Q、W、E、R”技能的描述、冷却时间、消耗的法力值等方面的资料，共134个英雄的资料，数据来源于带玩|DaiWan游戏平台取得的json档。
+网络游戏英雄联盟的英雄资料查询，输入方面用户可输入想查询英雄的名或称号（如“盖伦”和“德玛西亚之力”），输出方面则是该英雄的视频资料，被动技能以及其“Q、W、E、R”技能的描述、冷却时间、消耗法力值等方面的资料，共134个英雄的资料，数据来源于带玩|DaiWan游戏平台取得的json档。
 
 
 ## 输入：
@@ -14,11 +14,11 @@ game_hero_data
 ### 从输入到输出，除了flask模块，本组作品还使用了：
 ### 模块：
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
-### 数据
+### 数据：
 *  从 [带玩游戏平台](http://lolapi.games-cube.com/GetChampionDetail?champion_id={champion_id})
 上，将134个英雄的资料保存到本地，见[data](https://github.com/Tumaorou/nfu_newmedia_python/tree/master/game_hero_data/data)
 *  资料类型：字典包字典  
-### API
+### API：
 * 来源：[带玩游戏平台](http://lolapi.games-cube.com/GetChampionDetail?champion_id={champion_id})
 * 数据清理：每个英雄都有以各自英文名做文件名称的json档，方便调用
 
