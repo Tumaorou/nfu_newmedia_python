@@ -1,4 +1,5 @@
 game_hero_data
+
 英文项目名称game_hero_data，game hero指游戏中的英雄,data意思为”数据，资料”，就是指在《英雄联盟》这款游戏中英雄的相关资料。
 
 # 简介 
@@ -6,7 +7,7 @@ game_hero_data
 
 
 ## 输入：
-用户输入英雄名，交互界面使用到HTML5之datalist标签，显示的是指标名称，其对映值为指标代码，所以用户可以用 指标代码 或 指标名称 的片段找所需要的指标。
+用户输入英雄名，交互界面使用到[HTML5之datalist标签](http://www.w3school.com.cn/html5/html5_datalist.asp)，显示的是指标名称，其对映值为指标代码，所以用户可以用 指标代码 或 指标名称 的片段找所需要的指标。
 ## 输出：
 用户得到输出结果为：英雄的技能、视频资料等6个方面的数据，详细见[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html)
 
