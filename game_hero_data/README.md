@@ -15,7 +15,8 @@ game_hero_data
 ### 模块：
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
 ### 数据
-*  见[data](https://github.com/Tumaorou/nfu_newmedia_python/tree/master/game_hero_data/data)
+*  从 [带玩游戏平台](http://lolapi.games-cube.com/GetChampionDetail?champion_id={champion_id})
+上，将134个英雄的资料保存到本地，见[data](https://github.com/Tumaorou/nfu_newmedia_python/tree/master/game_hero_data/data)
 *  资料类型：字典包字典  
 ### API
 * [带玩游戏平台](http://lolapi.games-cube.com/GetChampionDetail?champion_id={champion_id})
