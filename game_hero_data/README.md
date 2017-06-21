@@ -1,12 +1,13 @@
 game_hero_data
-英文项目名称game_hero_data，game hero指游戏中的英雄,data意思为”数据，资料”，就是指在《英雄联盟》这款游戏中英雄的相关资料。
+
+英文项目名称game_hero_data，game hero指游戏中的英雄,data意思为”数据，资料”，就是指在《英雄联盟》这款游戏中英雄相关资料的说明。
 
 # 简介 
 网络游戏英雄联盟的英雄资料查询，输入方面用户可输入想查询英雄的名或称号（如“盖伦”和“德玛西亚之力”），输出方面则是该英雄的视频资料，被动技能以及其“Q、W、E、R”技能的描述、冷却时间、消耗法力值等方面的资料，共134个英雄的资料，数据来源于带玩|DaiWan游戏平台取得的json档。
 
 
 ## 输入：
-用户输入英雄名或英雄称号，交互界面使用到HTML5之datalist标签，所以用户可以用英雄名或英雄称号的片段找所需要的指标。
+用户输入英雄名或英雄称号，交互界面使用到[HTML5之datalist标签](http://www.w3school.com.cn/html5/html5_datalist.asp)，所以用户可以用英雄名或英雄称号的片段找所需要的指标。
 ## 输出：
 用户得到输出结果为：英雄的技能、视频资料等2个方面的数据，详细见[templates/results.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html)
 
