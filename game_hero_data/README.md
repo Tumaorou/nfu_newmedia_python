@@ -14,6 +14,7 @@ game_hero_data
 ### 从输入到输出，除了flask模块，本组作品还使用了：
 ### 模块
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
+* [json]
 ### 数据
 *  从 [带玩游戏平台](http://lolapi.games-cube.com/GetChampionDetail?champion_id={champion_id})
 上，将134个英雄的资料保存到本地，见[data](https://github.com/Tumaorou/nfu_newmedia_python/tree/master/game_hero_data/data)
