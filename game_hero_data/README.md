@@ -34,7 +34,7 @@ game_hero_data
 
 4、前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"text"，变数名称(name)为'input_hero_name'，使用了HTML5的datalist 定义在 list="name"" 及 datalist标签，详见HTML模版[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/entry.html)
 
-5、前端浏览器web 请求：用户选取指标後按了提交钮「搜索」，则产生新的web 请求，按照form元素中定义的method='POST' action='/search4'，以POST为方法，动作为/search4的web 请求
+5、前端浏览器web 请求：用户选取指标后按了提交钮「搜索」，则产生新的web 请求，按照form元素中定义的method='POST' action='/search4'，以POST为方法，动作为/search4的web 请求
 
 6、后端服务器收到用户web 请求，匹配到@app.route('/search4', methods=['POST'])的函数 get_dict_ename()
 
