@@ -38,7 +38,7 @@ game_hero_data
 
 6、后端服务器收到用户web 请求，匹配到@app.route('/search4', methods=['POST'])的函数 get_dict_ename()
 
-7、[input_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/input_data.py) 中 def get_dict_ename() 函数，[game_hero_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/game_hero_data.py)文件调用函数，把用户提交的数据，以flask 模块request.form['input_hero_name']	取到Web 请求中，HTML表单变数名称input_hero_name的值，存放在hero_name这Python变数下，再使用flask模块render_template 函数以templates/results.html模版为基础（输出），其中模版中output_skill_passive_name的值，用dict_hero['data'][0]['passive']['name']这变数之值，其他4项值如此类推。
+7、[game_hero_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/game_hero_data.py)文件调用[input_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/input_data.py) 中 def get_dict_ename() 函数，把用户提交的数据，以flask 模块request.form['input_hero_name']	取到Web 请求中，HTML表单变数名称input_hero_name的值，存放在hero_name这Python变数下，再使用flask模块render_template 函数以templates/results.html模版为基础（输出），其中模版中output_skill_passive_name的值，用dict_hero['data'][0]['passive']['name']这变数之值，其他4项值如此类推。
 
 8、前端浏览器收到web 响应：模版中[templates/results.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html) 的变数值正确的产生的话，前端浏览器会收到正确响应，看到指标的相关元数据。
 
