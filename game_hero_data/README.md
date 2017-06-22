@@ -12,9 +12,9 @@ game_hero_data
 用户得到输出结果为：英雄的视频资料、技能等2个方面的数据，详细见[templates/results.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/results.html)
 
 ### 从输入到输出，除了flask模块，本组作品还使用了：
-### 模块：
+### 模块
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
-### 数据：
+### 数据
 *  从 [带玩游戏平台](http://lolapi.games-cube.com/GetChampionDetail?champion_id={champion_id})
 上，将134个英雄的资料保存到本地，见[data](https://github.com/Tumaorou/nfu_newmedia_python/tree/master/game_hero_data/data)
 *  资料类型：字典包字典  
