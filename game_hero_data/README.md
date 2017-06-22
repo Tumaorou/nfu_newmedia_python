@@ -24,7 +24,7 @@ game_hero_data
 * 数据清理：每个英雄都有以各自英文名做文件名称的json档，方便调用
 
 # Web APP动作描述
-* 以下按web 请求（web request） - web 响应 时序说明：
+* 以下按web 请求（web request） - web 响应 时序说明
 
 1、后端伺服器启动：执行 game_hero_data.py 启动后端伺服器，等待web 请求。启动成功应出现： * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
