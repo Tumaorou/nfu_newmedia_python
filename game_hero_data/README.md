@@ -30,7 +30,7 @@ game_hero_data
 
 2、前端浏览器web 请求：访问 http://127.0.0.1:5000/ 启动前端web 请求
 
-3、后端伺服器web 响应：[game_hero_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/game_hero_data.py) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/entry.html)及一个含指标代码及名称的字典（见代码 the_list_name = list_name）产出的产生《英雄联盟英雄技能信息》的HTML页面
+3、后端伺服器web 响应：[game_hero_data.py](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/game_hero_data.py) 中 执行 了@app.route('/') 下的 entry_page()函数，以HTML模版[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/entry.html)及一个含英雄名称及英雄别称的列表（见代码 the_list_name = list_name）产出的产生《英雄联盟英雄技能信息》的HTML页面
 
 4、前端浏览器收到web 响应：出现HTML页面有HTML表单的输入 input 类型(type) 为"text"，变数名称(name)为'input_hero_name'，使用了HTML5的datalist 定义在 list="name"" 及 datalist标签，详见HTML模版[templates/entry.html](https://github.com/Tumaorou/nfu_newmedia_python/blob/master/game_hero_data/templates/entry.html)
 
