@@ -27,9 +27,9 @@ game_hero_data
 # Web APP动作描述
  以下是web请求前的准备工作
 
-1. 在[collect_data.py]collect_data.py)中，def collect_champion()函数，调用api，生成一个含有所有英雄简要资料的json档[champion.json](data/champion.json)保存到本地的[data](data)文件夹中。def get_dict_champion()函数，读取[champion.json](data/champion.json)并返回一个英雄简要资料的字典。用函数get_dict_champion()，调用字典dict_champion，以集合推导的方式，建立以id号为键，英雄英文名为值的小字典dict_id(见代码dict_id = {x['id']:x['ename'] for x in dict_champion['data']})。由于每个英雄在api里都是以各自的id号为网址的后部分，为了节省api的令牌，建立只有id号的列表list_id（见代码list_id = list(dict_id.keys())），跑含有id号的网址 , 并把每个id号下的英雄以其英文为文件名，输成json档，最终结果为134个英雄json档，保存到本地的[data](game_hero_data/data)文件夹中。
+1. 在[collect_data.py]collect_data.py)中，def collect_champion()函数，调用api，生成一个含有所有英雄简要资料的json档[data/champion.json](data/champion.json)保存到本地的[data](data)文件夹中。def get_dict_champion()函数，读取[data/champion.json](data/champion.json)并返回一个英雄简要资料的字典。用函数get_dict_champion()，调用字典dict_champion，以集合推导的方式，建立以id号为键，英雄英文名为值的小字典dict_id(见代码dict_id = {x['id']:x['ename'] for x in dict_champion['data']})。由于每个英雄在api里都是以各自的id号为网址的后部分，为了节省api的令牌，建立只有id号的列表list_id（见代码list_id = list(dict_id.keys())），跑含有id号的网址 , 并把每个id号下的英雄以其英文为文件名，输成json档，最终结果为134个英雄json档，保存到本地的[data](game_hero_data/data)文件夹中。
 
-2. 在[input_data.py](input_data.py)中，def get_dict_ename()函数，打开[champion.json](data/champion.json)，返回一个以英雄英文名为键，中文名和称号为值的字典(见代码dict_ename = {x['ename']:{'cname':x['cname'],'title':x['title']} for x in a['data']})，用做后面的函数和网页的表单界面，目标是用户输入英雄的中文名和称号都能得到想要的结果。def change_name()函数，将英雄的中文名和称号转换成英文名，调用函数get_dict_ename()，运用for循环，当出现某个英雄的中文名或称号时，返回英雄的英文名，目的是当用户输入中文的时候，调用这个函数，在代码中用英文名来寻找文档。def get_dict_hero(name)函数，调用以上两个函数，输入英雄中文名或称号时，返回英雄对应的以英文名命名的json档的字典，如果输入的名称不存在，返回'error'字符串
+2. 在[input_data.py](input_data.py)中，def get_dict_ename()函数，打开[data/champion.json](data/champion.json)，返回一个以英雄英文名为键，中文名和称号为值的字典(见代码dict_ename = {x['ename']:{'cname':x['cname'],'title':x['title']} for x in a['data']})，用做后面的函数和网页的表单界面，目标是用户输入英雄的中文名和称号都能得到想要的结果。def change_name()函数，将英雄的中文名和称号转换成英文名，调用函数get_dict_ename()，运用for循环，当出现某个英雄的中文名或称号时，返回英雄的英文名，目的是当用户输入中文的时候，调用这个函数，在代码中用英文名来寻找文档。def get_dict_hero(name)函数，调用以上两个函数，输入英雄中文名或称号时，返回英雄对应的以英文名命名的json档的字典，如果输入的名称不存在，返回'error'字符串
 
 * 以下按web 请求（web request） - web 响应 时序说明
 
