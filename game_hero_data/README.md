@@ -51,5 +51,5 @@ game_hero_data
 
 
 ## 作者成员：
-见[_team_.tsv](_team_/_team_.tsv)
+ 见[_team_.tsv](_team_/_team_.tsv)
 =======
