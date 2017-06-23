@@ -12,7 +12,9 @@ game_hero_data
 用户得到输出结果为：英雄的视频资料、技能等2个方面的数据，详细见[templates/results.html](templates/results.html)
 ![输出](输出.png)
 
+
 ## 从输入到输出，除了flask模块，本组作品还使用了：
+
 ### 模块
 * [requests](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
 * [json](https://docs.python.org/2/library/json.html)
@@ -25,6 +27,7 @@ game_hero_data
 * 数据清理：每个英雄都有以各自英文名做文件名称的json档，方便调用
 
 ## Web APP动作描述
+
  以下是web请求前的准备工作
 
 1. 在[collect_data.py]collect_data.py)中，def collect_champion()函数，调用api，生成一个含有所有英雄简要资料的json档[data/champion.json](data/champion.json)保存到本地的[data](data)文件夹中。def get_dict_champion()函数，读取[data/champion.json](data/champion.json)并返回一个英雄简要资料的字典。用函数get_dict_champion()，调用字典dict_champion，以集合推导的方式，建立以id号为键，英雄英文名为值的小字典dict_id(见代码dict_id = {x['id']:x['ename'] for x in dict_champion['data']})。由于每个英雄在api里都是以各自的id号为网址的后部分，为了节省api的令牌，建立只有id号的列表list_id（见代码list_id = list(dict_id.keys())），跑含有id号的网址 , 并把每个id号下的英雄以其英文为文件名，输成json档，最终结果为134个英雄json档，保存到本地的[data](game_hero_data/data)文件夹中。
@@ -51,5 +54,5 @@ game_hero_data
 
 
 ## 作者成员：
+
  见[_team_.tsv](_team_/_team_.tsv)
-=======
